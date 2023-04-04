@@ -85,11 +85,11 @@ print("RMSE:", rmse)
 ### Output1:
 ![simple linear regression model for predicting the marks scored](Output1.png)
 ### Output2:
-![simple linear regression model for predicting the marks scored](output2.png)
+![simple linear regression model for predicting the marks scored](Output2.png)
 ### Output3:
-![simple linear regression model for predicting the marks scored](output3.png)
+![simple linear regression model for predicting the marks scored](Output3.png)
 ### Output4:
-![simple linear regression model for predicting the marks scored](output4.png)
+![simple linear regression model for predicting the marks scored](Output4.png)
 
 
 
