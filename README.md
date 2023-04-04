@@ -81,10 +81,15 @@ print("RMSE:", rmse)
 ```
 
 ## Output:
-![simple linear regression model for predicting the marks scored](output1.png)
-<!-- ![simple linear regression model for predicting the marks scored](output1.png)
-![simple linear regression model for predicting the marks scored](output1.png)
-![simple linear regression model for predicting the marks scored](output1.png) -->
+
+### Output1:
+![simple linear regression model for predicting the marks scored](Output1.png)
+### Output2:
+![simple linear regression model for predicting the marks scored](output2.png)
+### Output3:
+![simple linear regression model for predicting the marks scored](output3.png)
+### Output4:
+![simple linear regression model for predicting the marks scored](output4.png)
 
 
 
