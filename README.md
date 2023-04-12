@@ -30,15 +30,18 @@ import matplotlib.pyplot as plt
 
 data=pd.read_csv('student_scores.csv')
 
-print("Data Head and Tail:")
+
 data.head()
+print("Data Head :\n" ,data.head())
 data.tail()
+print("\nData Tail :\n" ,data.tail())
+
 
 x=data.iloc[:,:-1].values  
 y=data.iloc[:,1].values
 
-print(x)
-print(y)
+print("\nArray value of X:\n" ,x)
+print("\nArray value of Y:\n", y)
 
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
@@ -49,10 +52,13 @@ regressor=LinearRegression()
 regressor.fit(x_train,y_train)
 
 y_pred=regressor.predict(x_test) 
-print(y_pred)
 
-print(y_test)
+print("\nValues of Y prediction :\n",y_pred)
 
+print("\nArray values of Y test:\n",y_test)
+
+
+print("\nTraining Set Graph:\n")
 plt.scatter(x_train,y_train,color='red') 
 plt.plot(x_train,regressor.predict(x_train),color='green') 
 plt.title("Hours Vs Score(Training set)") 
@@ -61,6 +67,8 @@ plt.ylabel("Score")
 plt.show()
 
 y_pred=regressor.predict(x_test) 
+
+print("\nTest Set Graph:\n")
 plt.scatter(x_test,y_test,color='red') 
 plt.plot(x_test,regressor.predict(x_test),color='green') 
 plt.title("Hours Vs Score(Test set)") 
@@ -74,6 +82,7 @@ mae = metrics.mean_absolute_error(x, y)
 mse = metrics.mean_squared_error(x, y)
 rmse = np.sqrt(mse)  
 
+print("\n\nValues of MSE, MAE and RMSE : \n")
 print("MAE:",mae)
 print("MSE:", mse)
 print("RMSE:", rmse)
@@ -82,14 +91,24 @@ print("RMSE:", rmse)
 
 ## Output:
 
-### Output-1:
-![simple linear regression model for predicting the marks scored](Output.png)
-### Output-2:
+### df.head():
+![simple linear regression model for predicting the marks scored](Output1.png)
+### df.tail():
 ![simple linear regression model for predicting the marks scored](Output2.png)
-### Output-3:
+### Array value of X:
 ![simple linear regression model for predicting the marks scored](Output3.png)
-### Output-4:
+### Array value of Y:
 ![simple linear regression model for predicting the marks scored](Output4.png)
+### Values of Y prediction:
+![simple linear regression model for predicting the marks scored](Output5.png)
+### Array values of Y test:
+![simple linear regression model for predicting the marks scored](Output6.png)
+### Training Set Graph:
+![simple linear regression model for predicting the marks scored](Output7.png)
+### Test Set Graph:
+![simple linear regression model for predicting the marks scored](Output8.png)
+### Values of MSE, MAE and RMSE:
+![simple linear regression model for predicting the marks scored](Output9.png)
 
 
 
